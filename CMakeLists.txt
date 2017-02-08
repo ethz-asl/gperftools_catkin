@@ -9,7 +9,7 @@ include(ExternalProject)
 file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
 
 ExternalProject_Add(gperftools_src
-  URL https://googledrive.com/host/0B6NtGsLhIcf7MWxMMF9JdTN3UVk/gperftools-2.2.1.tar.gz
+  URL https://github.com/gperftools/gperftools/releases/download/gperftools-2.5/gperftools-2.5.tar.gz
   UPDATE_COMMAND ""
   CONFIGURE_COMMAND cd ../gperftools_src && ./configure --with-pic 
     --prefix=${CATKIN_DEVEL_PREFIX}
